@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wraper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(32deg 37% 92%);
+}
+
+.container {
+  position: absolute;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 2em;
+  border-radius: 1.5em;
+  height: 420px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.img img {
+  width: 310px;
+  height: 100%;
+  border-radius: 1.5em 0 0 1.5em;
+}
+
+.content {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 0 1.5em 1.5em 0;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start; */
+  padding: 1.5em 2em;
+}
+
+.product_title {
+  margin: 0.6em 1.6em 0.7em 0px;
+  font-size: 35px;
+
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+.product {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: hsl(228deg 12% 48%);
+  letter-spacing: 0.3em;
+  font-weight: 500;
+}
+.desc {
+  font-family: "Montserrat", sans-serif;
+  width: 96%;
+  font-size: 17px;
+  color: hsl(228deg 12% 48%);
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+.green_text {
+  color: hsl(158deg 36% 37%);
+  margin-right: 0px;
+}
+.drop-price {
+  font-size: 16px;
+  color: #6c6c6c;
+  text-decoration: line-through;
+}
+button {
+  width: 100%;
+  background-color: hsl(158deg 36% 37%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 2em 0 1em 0;
+  padding: 1em 0;
+  cursor: pointer;
+}
+.add_to_cart {
+  color: #fff;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 650px) {
+    .container{
+        display: block;
+       
+    }
+    .content{
+        border-radius:1.5em 1.5em;
+    }
+    .img{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 381px){
+    .container{
+        display: block;
+        height:650px;
+       
+    }
+    .content{
+        border-radius:1.5em 1.5em;
+    }
+    .img{
+        display: none;
+    }
+}
